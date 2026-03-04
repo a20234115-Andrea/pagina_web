@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herramientas</title>
+    <title>Herramientas - IDIMA SAC</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+
+<header id="header">
+    <div class="container nav">
+        <img src="../images/general/LOGO_IDIMASAC (1).png" alt="IDIMA SAC">
+        <nav>
+            <a href="../../index.html">Inicio</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container padded">
+    <h1>Herramientas</h1>
+    <p>Selecciona la categoría y encuentra las herramientas que necesitas.</p>
+
+    <!-- Buscador -->
+    <div id="buscador">
+        <input type="text" id="search" placeholder="Buscar herramienta...">
+    </div>
+
+    <div class="main-content">
+
+        <!-- MENÚ LATERAL -->
+        <div id="menu-lateral">
+            <button data-categoria="manuales">Manuales</button>
+            <button data-categoria="electricas">Eléctricas</button>
+            <button data-categoria="neumaticas">Neumáticas</button>
+            <button data-categoria="medicion">Medición</button>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div id="productos-section">
+
+            <!-- ================= MANUALES ================= -->
+            <div class="categoria" data-categoria="manuales">
+                <h2>Herramientas Manuales</h2>
+
+                <div class="subcategorias">
+                    <button class="subcat-btn active" data-subcat="llaves">Llaves</button>
+                    <button class="subcat-btn" data-subcat="destornilladores">Destornilladores</button>
+                    <button class="subcat-btn" data-subcat="alicates">Alicates</button>
+                </div>
+
+                <div class="productos-grid">
+
+                    <div class="producto"
+                        data-subcat="llaves"
+                        data-nombre="Llave mixta"
+                        data-especificaciones='{
+                            "Medidas": ["8mm","10mm","12mm","14mm"]
+                        }'>
+                        <img src="../images/herramientas/llave-mixta.jpg">
+                        <h3>Llave mixta</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ================= ELECTRICAS ================= -->
+            <div class="categoria" data-categoria="electricas">
+                <h2>Herramientas Eléctricas</h2>
+
+                <div class="subcategorias">
+                    <button class="subcat-btn active" data-subcat="taladros">Taladros</button>
+                    <button class="subcat-btn" data-subcat="esmeriles">Esmeriles</button>
+                </div>
+
+                <div class="productos-grid">
+
+                    <div class="producto"
+                        data-subcat="taladros"
+                        data-nombre="Taladro industrial"
+                        data-especificaciones='{
+                            "Potencia": ["650W","850W","1000W"]
+                        }'>
+                        <img src="../images/herramientas/taladro.jpg">
+                        <h3>Taladro industrial</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ================= NEUMATICAS ================= -->
+            <div class="categoria" data-categoria="neumaticas">
+                <h2>Herramientas Neumáticas</h2>
+            </div>
+
+            <!-- ================= MEDICION ================= -->
+            <div class="categoria" data-categoria="medicion">
+                <h2>Herramientas de Medición</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
